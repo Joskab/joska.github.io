@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
+<style>
 
+@media only screen and (max-width: 620px) {
+  .top, .main, .footer {
+    width: 100%;
+  }
+}
+
+</style>
 <body>
     <form action="">
-        <div style="background-color:lightgrey;padding:10px; padding-left: 5%;">
+        <div style="background-color:lightgrey;padding:10px; padding-left: 5%;" class="top">
             <h1 style="font-size:5vw;">Tervetuloa eläintarhaan!</h1>
             <h2 style="font-size:4vw;">Valitse haluamasi eläinlaji painamalla kuvaa:</h2>
         </div>
-        <div style="padding-left: 5%;">
+        <div style="padding-left: 5%;" class="main">
             <button type="button" id="koira" > <img
                     src="https://upload.wikimedia.org/wikipedia/commons/6/61/20110425_German_Shepherd_Dog_8505.jpg"
                     alt="Koira" height="320vw" width="400vw" /></button>
@@ -23,7 +31,7 @@
                     src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Zaniskari_Horse_in_Ladakh.jpg"
                     alt="Hevonen" height="320vw" width="400vw" /></button>
         </div>
-        <div style="background-color:lightgrey;padding:150px; padding-left: 5%;">
+        <div style="background-color:lightgrey;padding:150px; padding-left: 5%;" class="footer">
             ©Joskaboyhahaha
         </div>
     </form>
