@@ -6,18 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img{
+            border-radius: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            animation: fadeIn linear 1s;
+            
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+        }
+        </style>
 </head>
 
 <body style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Closeup_of_lawn_grass.jpg);">
     <button style="height: 30px; width: 100px;" onclick="window.location.href='index.html'">Takaisin</button>
     <div style="margin-top: 10px;">
         <label for="persis" style="background-color: green; font-size: 1vw;"> Persialainen</label> <br>
-        <button id="persis" onclick="window.location.href='Persialainen.html'"> <img
+        <button id="persis" onclick="window.location.href='Persialainen.html'" style="background-color: lightgreen; margin: 10px;"> <img
                 src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Bicolor_Persian.jpg"
                 alt="Kissa" height="128" width="200" />
         </button> <br>
         <label for="raggis" style="background-color: green; font-size: 1vw;"> Ragdoll</label> <br>
-        <button id="raggis" onclick="window.location.href='ragdoll.html'"> <img
+        <button id="raggis" onclick="window.location.href='ragdoll.html'" style="background-color: lightgreen; margin: 10px;"> <img
                 src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Russell_the_ragdoll.png" alt="Kissa"
                 height="128" width="200" />
     </div>
